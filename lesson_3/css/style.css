@@ -1,0 +1,82 @@
+@import url("reset.css");
+
+header h1{
+
+   color: blue;
+}
+
+.mac{
+   color: blueviolet;
+}
+
+.mac.mac2{
+   color: aqua;
+}
+
+.mac3{
+   color: bisque;
+}
+
+.header2{
+   color: coral;
+}
+
+.history{
+   color: brown;
+}
+
+.history .years{
+   color: aquamarine;
+}
+#business{
+   color: blue;
+}
+
+.personal_pc h2{
+   color: aqua;
+}
+
+.personal_pc {
+   color: bisque;
+}
+.personal_pc1{
+   color: blueviolet;
+}
+
+
+
+.small ~ p{
+   color: dodgerblue;
+}
+
+.small{
+   color: darksalmon;
+}
+
+.small__color >p{
+   color: fuchsia;
+}
+
+.small__color div{
+   color: dimgray;
+}
+
+.vintage ul{
+   color: indianred;
+}
+
+.vintage ul li+li+li{
+   color: dodgerblue;
+}
+
+[class*="__desk"]{
+   color: lime;
+}
+
+.vintage2, .vintage3{
+   color: lightpink;
+}
+
+.vintage ~ p{
+   color: red;
+}
