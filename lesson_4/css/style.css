@@ -1,0 +1,102 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Kanit:300,600italic,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Paprika:regular&display=swap");
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+       url('../fonts/CircularStd-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+       url('../fonts/CircularStd-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+h1{
+   font-family: 'Oswald';
+   font-weight: 700;
+   font-size: 24px;
+   color: blueviolet;
+   letter-spacing: 2px;
+
+}
+
+h1 span{
+   text-transform: uppercase;
+   color: red;
+}
+
+.ibm{
+   font-family: 'CircularStd';
+   font-weight: 500;
+   text-align: justify;
+   color: chartreuse;
+}
+
+.snap, .education{
+
+   font-family: 'CircularStd';
+   font-weight: 700;
+   text-shadow: 2px -2px 4px gray;
+   
+   
+   
+}
+
+.company{
+   font-family: 'Kanit';
+   font-weight: 700;
+   text-decoration: line-through;
+}
+
+.lorem{
+   font-family: 'Kanit';
+   font-weight: 300;
+   text-decoration: underline;
+   text-indent: 10px;
+}
+
+.attention{
+   font-family: 'Kanit';
+   font-weight: 600;
+   font-size: 24px;
+   font-style: italic;
+   color: darkblue;
+   line-height: 2;
+}
+
+
+.list ul{
+   font-family: 'Paprika';
+   font-size: 14px;
+   color: darkgreen;
+   font-style: normal;
+   text-align: center;
+   
+}
+
+.lorem-sit{
+   font-family: "Kavoon";
+   font-size: 30px;
+   color: cornflowerblue;
+   word-spacing: 15px;
+}
+
+.ipsum-dolor{
+   font-family: "Itim";
+   font-size: 20px;
+   color: fuchsia;
+   text-align: right;
+   text-decoration: line-through;
+}
+
