@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+
+
+body{
+   font-family: 'Poppins';
+}
+
+[class*="__container"]{
+   margin: 0 auto;
+   max-width: 846px;
+   padding: 0 15px;
+}
+
+
+
+.caption h2{
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6;
+
+}
+
+.caption{
+   max-width: 400px;
+   margin-bottom: 40px;
+}
+
+.header{
+   margin-bottom: 80px;
+}
+
+
+
+.text p{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.7;
+   margin-bottom: 30px;
+   color: #6C757D;
+}
+
+.sand{
+   margin-bottom: 80px;
+}
+
+.sand img{
+   display: block;
+   max-width: 100%;
+   margin: 0 auto;
+   max-width: 100%;
+}
+
+.second{
+
+   max-width: 605px;
+}
+
+.pictures{
+   text-align: center;
+   font-size: 0;
+   margin-bottom: 80px;
+}
+
+.pictures img{
+
+   max-width: 100%;
+}
+
+
+.boat-img{
+   margin-right: 30px;
+   
+}
+
