@@ -1,0 +1,23 @@
+@import url('style.css');
+
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,700&display=swap);
+
+[class*="__container"]{
+   margin: 0 auto;
+   max-width: 1197px;
+   padding: 0 15px;
+}
+
+body{
+   font-family: 'Inter';
+   font-weight: 700;
+   font-size: 24px;
+}
+h2{
+   text-align: center;
+   text-decoration: underline;
+}
+
+.blok-6__img{
+   background-color: blue;
+}
