@@ -104,6 +104,23 @@ line-height: 150%; /* 24/16 */
 
 
 
+.menu__sub-menu::after{
+   content: "";
+   position: absolute;
+   top: -10%;
+   left: 0;
+   display: inline-block;
+   background-color: white;
+   opacity: 0;
+   width: 180px;
+   height: 35px;
+}
+
+
+
+
+
+
 
 .menu__sub-menu{
    color: rgba(99, 115, 129, 1);
