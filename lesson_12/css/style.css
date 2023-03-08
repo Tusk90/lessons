@@ -1,0 +1,438 @@
+@import url("reset.css");
+
+body {
+   background: radial-gradient(#555260, #18171b);
+   
+ }
+ 
+ .model-car {
+   transform: rotate(2deg);
+   position: absolute;
+ }
+ .model-car__container{
+   position: relative;
+   top: 350px;
+   left: 800px;
+   
+ 
+ }
+ .car {
+   position: relative;
+   
+ }
+
+
+ .car-bumper-top {
+   width: 135px;
+   height: 23px;
+   position: absolute;
+   background-color: #ce4038;
+   border: 4px solid;
+   border-radius: 40%;
+   top: -8px;
+   left: -235px;
+   transform: rotate(1deg);
+   border-color: #282a35 transparent transparent #282a35;
+   overflow: hidden;
+   box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.17);
+ }
+
+ .front-light-bulb {
+   position: absolute;
+   width: 33px;
+   height: 10px;
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 50px 0;
+   left: -4px;
+   top: 1px;
+   transform: rotate(-10deg);
+ }
+ .car-bumper {
+   position: absolute;
+   width: 180px;
+   height: 65px;
+   border-radius: 25px 70px 70px 100px;
+   background-color: #ce4038;
+   top: -2px;
+   left: -235px;
+   border: 4px solid;
+   border-color: #282a35;
+   z-index: -3;
+   overflow: hidden;
+   box-shadow: inset -5px -10px 0 rgba(51, 51, 51, 0.22), inset 5px 0 0 rgba(255, 255, 255, 0.17);
+ }
+ .car-divider {
+   position: absolute;
+   width: 260px;
+   height: 3px;
+   background-color: #282a35;
+   top: 46px;
+   left: -160px;
+ }
+ .car-light {
+   position: absolute;
+   height: 20px;
+   width: 200px;
+   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.767));
+   left: -401px;
+   top: -17px;
+   border-radius: 0 0px 50% 0;
+   transform: rotate(7deg);
+ }
+ .car-tire__front, .car-tire__rear {
+   width: 60px;
+   height: 60px;
+   background: #282a35;
+   position: absolute;
+   border-radius: 50%;
+   top: 22px;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .car-tire__front:before,
+ .car-tire__rear:before {
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   content: "";
+   z-index: 1;
+   border: 10px solid #282a35;
+   border-radius: 50%;
+ }
+
+
+ .car-tire__front::after,
+ .car-tire__rear::after{
+
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   content: "";
+   top: -8px;
+   left: -5px;
+   background-color: #282a35;
+   border-radius: 50%;
+   opacity: 0.3;
+   z-index: -1;
+   
+ }
+
+
+
+
+
+
+
+
+ .car-tire__front {
+   left: -190px;
+ }
+ .car-tire__rear {
+   right: -130px;
+ }
+ .detail-1{
+   position: absolute;
+   width: 2px;
+   height: 60px;
+   background-color: #282a35;
+   z-index: 2;
+ }
+ .detail-1:before {
+   position: absolute;
+   content: "";
+   width: 2px;
+   height: 60px;
+   background-color: #282a35;
+   transform: rotate(90deg);
+ }
+ .detail-2{
+   position: absolute;
+   width: 2px;
+   height: 60px;
+   background-color: #282a35;
+   transform: rotate(45deg);
+   z-index: 2;
+ }
+ .detail-2:before{
+   position: absolute;
+   content: "";
+   width: 2px;
+   height: 60px;
+   background-color: #282a35;
+   transform: rotate(90deg);
+ }
+.detail-3 {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   content: "";
+   background-color: wheat;
+   opacity: 0.3;
+   border-radius: 50%;
+   
+   
+ }
+ .car-fender {
+   position: absolute;
+   top: -2px;
+   left: -100px;
+   width: 260px;
+   height: 65px;
+   border-radius: 30px 40px 40px 20px;
+   background-color: #ce4038;
+   border: 4px solid;
+   border-color: #282a35;
+   z-index: 0;
+   overflow: hidden;
+   box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.17), inset -5px -4px 0 rgba(51, 51, 51, 0.2);
+ }
+
+.car-fender::after{
+   position: absolute;
+   width: 20px;
+   height: 10px;
+   content: "";
+   background-color: #282a35;
+   box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.17), inset -5px -4px 0 rgba(51, 51, 51, 0.2); ;
+   border-radius: 20%;
+   left: 120px;
+   top: 5px;
+
+}
+
+
+ .car-shine {
+   position: absolute;
+   width: 40px;
+   height: 165px;
+   background-color: rgba(255, 255, 255, 0.25);
+   transform: rotate(20deg);
+   top: -90px;
+   left: 100px;
+   opacity: 0.4;
+ }
+ .car-shine:before {
+   position: absolute;
+   content: "";
+   width: 20px;
+   height: 165px;
+   background-color: rgba(255, 255, 255, 0.25);
+   left: -30px;
+ }
+ .car-fender-bottom {
+   width: 200px;
+   height: 16px;
+   background: #a9302a;
+   position: absolute;
+   top: 47px;
+   left: -95px;
+   border: 4px solid #282a35;
+   transform: skew(35deg);
+ }
+ .car-windshield {
+   width: 10px;
+   height: 100px;
+   background: #282a35;
+   position: absolute;
+   top: -60px;
+   left: -90px;
+   transform: rotate(50deg);
+   border-radius: 70px 200px 70px 90px;
+   z-index: -3;
+ }
+
+.car-windshield::before{
+
+   position: absolute;
+   content: "";
+   width: 5px;
+   height: 40px;
+   background-color: rgba(255, 255, 255, 0.25);
+   border-radius: 60px 20px 20px 20px;
+   left: 0;
+   top: 0;
+
+}
+
+
+
+
+
+ .car-side-mirror {
+   position: absolute;
+   width: 26px;
+   height: 20px;
+   border-radius: 40%;
+   background: #f2f2f2;
+   top: -12px;
+   left: -100px;
+   z-index: 99;
+   background-color: #ce4038;
+   border: 4px solid #282a35;
+   box-shadow: inset 3px 0 0 rgba(255, 255, 255, 0.17);
+ }
+ .car-starman {
+   position: relative;
+ }
+ .car-starman__face {
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #f2f2f2;
+   top: -60px;
+   left: 1px;
+   border: 4px solid #282a35;
+   overflow: hidden;
+   box-shadow: inset -4px -4px 0 rgba(51, 51, 51, 0.2);
+ }
+ .car-starman__face:before {
+   position: absolute;
+   content: "";
+   width: 25px;
+   height: 15px;
+   border-radius: 3px;
+   background: #f7ac76;
+   transform: rotate(0deg);
+   left: -7px;
+   top: 7px;
+   border: 2px solid #282a35;
+   box-shadow: inset -5px 5px 3px 0 rgba(255, 255, 255, 0.4);
+ }
+ .car-starman__back {
+   position: absolute;
+   width: 26px;
+   height: 50px;
+   border-radius: 16px;
+   background-color: #f2f2f2;
+   border: 4px solid #282a35;
+   top: -25px;
+   left: 15px;
+   z-index: -3;
+   box-shadow: inset 11px 3px 0 rgba(51, 51, 51, 0.2);
+ }
+ .car-starman__hand {
+   position: absolute;
+   width: 70px;
+   height: 18px;
+   background-color: #f2f2f2;
+   border: 4px solid #282a35;
+   border-radius: 20px;
+   left: -45px;
+   top: -15px;
+   z-index: -3;
+   transform: rotate(5deg);
+   box-shadow: inset 0 3px 0 rgba(51, 51, 51, 0.17);
+ }
+ .car-starman__steering {
+   width: 10px;
+   height: 30px;
+   background-color: #282a35;
+   position: absolute;
+   border-radius: 10px;
+   top: -25px;
+   left: -50px;
+   z-index: -1;
+ }
+ .seat {
+   position: absolute;
+   width: 10px;
+   height: 40px;
+   border-radius: 20px;
+   border: none;
+   background-color: #282a35;
+   transform: rotate(9.2deg);
+   top: -38px;
+   left: 47px;
+   z-index: 3;
+   
+ }
+ .car-rear-top {
+   position: absolute;
+   width: 113px;
+   height: 33px;
+   background-color: #ce4038;
+   top: -25px;
+   left: 50px;
+   border-radius: 0 50% 0 0;
+   transform: rotate(9.2deg);
+   border: 4px solid;
+   border-color: #282a35 #282a35 transparent transparent;
+   z-index: 2;
+   box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.17);
+ }
+
+
+ .back-light {
+   position: absolute;
+   width: 23px;
+   height: 10px;
+   background-color: #282a35;
+   top: 25px;
+   left: 86px;
+   z-index: 0;
+   border-radius: 0px 0 0 50px;
+ }
+
+
+.back-light::before{
+   position: absolute;
+   content: "";
+   top: 2px;
+   left: 15px;
+   background-color: #ce4038;
+   width: 2px;
+   height: 5px;
+  
+
+}
+
+
+
+ .car-deco {
+   width: 60px;
+   height: 3px;
+   background-color: #282a35;
+   position: absolute;
+   left: 100px;
+   top: 1px;
+   z-index: 2;
+   transform: rotate(8.5deg);
+ }
+ .car-deco:before {
+   position: absolute;
+   content: "";
+   width: 15px;
+   height: 15px;
+   border: 3px solid #282a35;
+   border-radius: 50%;
+   left: -20px;
+   top: -10px;
+ }
+ .front-light {
+   position: absolute;
+   width: 10px;
+   height: 20px;
+   background: #282a35;
+   border-radius: 50px;
+   left: -229px;
+   top: 30px;
+   transform: rotate(-23deg);
+ }
+
+ .front-light-bulb::after{
+
+   content: "";
+   display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: orange;
+   opacity: 0.7;
+   position: absolute;
+   top: 0;
+   left: 20px;
+ }
+
