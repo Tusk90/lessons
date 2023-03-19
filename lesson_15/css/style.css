@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap);
+
+@import url("reset.css");
+
+[class*="__container"]{
+   margin: 0 auto;
+   max-width: 1230px;
+   padding: 0 15px;
+   }
+
+
+.wrapper{
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.wrapper > main{
+
+   flex-grow: 1;
+}
+
+
+.room{
+
+   padding: 100px 0px;
+   font-family: "Poppins";
+   
+}
+
+.header-room{
+
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 519px;
+   margin: 0 auto 53px;
+
+}
+
+.header-room__title{
+
+font-weight: 700;
+font-size: 56px;
+line-height: 1.39;
+}
+
+
+.header-room__text{
+
+font-size: 18px;
+line-height: 1.55;
+text-align: center;
+
+
+}
+
+.main-room__foto{
+   margin-bottom: 100px;
+}
+
+.main-room img{
+
+   max-width: 100%;
+}
+
+
+
+.main-room__article{
+   display: flex;
+   gap:30px;
+   margin-bottom: 32px;
+}
+
+
+
+.left-room{
+
+   flex: 0 1 50%;
+}
+
+.right-room{
+
+   flex: 0 1 50%;
+}
+
+
+.left-room__title, .right-room__title{
+
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.37;
+   margin-bottom: 24px;
+}
+
+.left-room__text{
+
+   font-size: 18px;
+   color: rgba(156, 156, 156, 1);
+   line-height: 1.5;
+   margin-bottom: 60px;
+}
+
+.date-room{
+
+   display: flex;
+   color: rgba(156, 156, 156, 1);
+   gap: 80px;
+
+}
+
+
+.paragraph-room{
+
+   color: rgba(156, 156, 156, 1);
+}
+
+.paragraph-room > *:not(:last-child){
+
+   margin-bottom: 30px;
+   
+}
+
+.paragraph-room__down, .paragraph-room__up{
+
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+
+.main-room__cards{
+   margin-bottom: 100px;
+}
+
+
+.cards-room__block{
+   display: flex;
+   flex-wrap: wrap;
+   gap:32px;
+  
+}
+
+
+
+
+
+
+.interior-room__achivement{
+
+   font-weight: 500;
+   line-height: 1.5;
+  
+}
+
+.interior-room__achivement::after{
+
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 464px;
+	height: 2px;
+	margin-left: 26px;
+	background-color: black;
+}
+
+
+
+.main-room__interior{
+
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.interior-room__items{
+
+   display: flex;
+   align-items: center;
+   
+}
+
+.items-room__foto{
+
+   flex: 0 0 62.166667%;
+}
+
+
+.items-room__body{
+
+   flex: 0 0 37.833333%;
+   padding-left: 120px;
+   
+}
+
+.items-room__title{
+
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.3;
+   margin-bottom: 20px;
+}
+
+.items-room__text{
+
+   font-size: 18px;
+   line-height: 1.6;
+   color: rgba(156, 156, 156, 1);
+}
