@@ -1,0 +1,637 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap);
+
+
+
+
+@import url("reset.css");
+
+[class*="__container"]{
+   margin: 0 auto;
+   max-width: 1230px;
+   padding: 0 15px;
+   }
+
+
+.wrapper{
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 30px 0px;
+
+}
+
+.wrapper > main{
+
+   flex-grow: 1;
+}
+
+.main{
+
+   font-family: "Inter";
+   color: rgba(99, 115, 129, 1);
+   padding: 50px 0px;
+}
+
+
+
+.main__title{
+
+   font-weight: 700;
+   color: rgba(33, 43, 54, 1);
+   font-size: 24px;
+   line-height: 1.25;
+   margin-bottom: 30px;
+}
+
+
+.billing-form__information{
+   display: flex;
+   margin-bottom: 35px;
+   
+}
+
+.billing-form__column{
+   display: flex;
+   flex-wrap: wrap;
+   flex: 0 1 0.5691056910569106%;
+   margin:0 -14px;
+   row-gap: 30px;
+}
+
+
+.billing-form__line{
+
+   padding: 0 14px;
+   flex: 1 1 50%;
+
+}
+
+
+
+
+
+.billing-form__select{
+
+
+   width: 100%;
+   padding: 10px 15px;
+   font-family: inherit;
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+}
+
+
+
+
+.billing-form__input{
+
+   width: 100%;
+   padding: 10px 15px;
+   font-family: inherit;
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   
+}
+
+.billing-form__input::placeholder{
+   font-weight: 500;
+   
+}
+
+.billing-form__area{
+   resize: vertical;
+   width: 542px;
+   height: 180px;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+}
+
+
+
+
+
+
+
+.billing-form__area::placeholder{
+
+   font-weight: 500;
+   line-height: 1.5;
+   padding: 15px 10px;
+}
+
+.billing-form__radio{
+
+   margin-bottom: 55px;
+}
+
+
+.radio__item {
+	position: relative;
+}
+.radio__item:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.radio__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.radio__input:focus-visible + .radio__label {
+	outline: 1px solid #000;
+	border-radius: 5px;
+}
+.radio__input:checked + .radio__label::before {
+	background: url("../img/check-blue.svg") 50% no-repeat;
+  
+   
+}
+.radio__label {
+	cursor: pointer;
+	display: inline-flex;
+	align-items:center;
+	gap: 14px;
+}
+.radio__label::before {
+	content: "";
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+   border: 1px solid #bdbdbd;
+   border-radius: 3px;
+}
+
+.text-field__title{
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.3;
+   color: rgba(33, 43, 54, 1);
+   margin-bottom: 25px;
+}
+
+
+.text-field__btn{
+
+
+padding: 12px 22px;
+background-color: rgba(33, 43, 54, 1);
+border-radius: 5px;
+color: rgba(255, 255, 255, 1);
+}
+
+.text-field__input{
+
+   
+   padding: 10px 15px;
+   font-family: inherit;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+   border-radius: 5px;
+   
+
+}
+
+.billing-form__text{
+
+   margin-bottom: 30px;
+}
+
+
+.text-field__group{
+   
+   display: flex;
+   gap: 10px;
+}
+
+
+
+
+
+.button{
+
+   width: 420px;
+   padding: 10px;
+   background-color: rgba(48, 86, 211, 1);
+   border: 1px solid #bdbdbd;
+   color: rgba(255, 255, 255, 1);
+   border-radius: 5px;
+}
+
+
+
+/*=============================================================*/
+
+.footer{
+
+   font-family: "Roboto";
+   color: rgba(63, 63, 63, 1);
+}
+
+.address-form{
+
+   display: flex;
+   flex-direction: column;
+   max-width: 606px;
+   
+}
+
+.address-form::after{
+
+   content: "";
+	width: 100%;
+	height: 1px;
+	background-color: rgba(196, 196, 196, 1);
+}
+
+
+.address-form__line{
+
+   display: flex;
+  
+}
+
+.address-form__line:not(:last-of-type){
+
+   margin-bottom: 30px;
+}
+
+
+
+.address-form__label{
+
+   flex: 1 1 auto;
+}
+
+
+.address-form__title{
+
+   font-family: "Oswald";
+   font-size: 24px;
+   line-height: 283.333333%; /* 68/24 */
+   margin-bottom: 34px;
+}
+
+.address-form__label--required::after{
+
+   content: "*";
+   color: red;
+}
+
+.address-form__input{
+
+   flex: 0 0 451px;
+   padding: 10px 15px;
+   font-family: inherit;
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+   
+}
+
+.address-form__text{
+color: rgba(130, 130, 130, 1);
+font-size: 14px;
+line-height: 142.857143%; /* 20/14 */
+margin-bottom: 14px;
+}
+
+.address-form__button{
+
+   font-family: "Oswald";
+   margin-bottom: 36px;
+}
+
+.login{
+   
+   font-weight: 500;
+   width: 120px;
+   padding: 10px;
+   background-color: rgba(0, 0, 0, 1);
+   color: rgba(255, 255, 255, 1);
+   margin-right: 25px;
+}
+
+.link{
+font-weight: 400;
+font-size: 14px;
+line-height: 142.857143%; /* 20/14 */
+color: rgba(15, 109, 177, 1);
+
+}
+
+.shipping-form--marg{
+
+   margin-bottom: 40px;
+}
+
+/*==============================================================*/
+
+
+.table-form{
+
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   max-width: 606px;
+}
+
+.main-form__table{
+
+   margin-bottom: 45px;
+}
+
+.table-form__input{
+
+   flex: 0 1 451px;
+   padding: 10px 15px;
+   font-family: inherit;
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+}
+
+.table-form__label--required::after{
+
+   content: "*";
+   color: red;
+}
+
+.table-form__line{
+
+   display: flex;
+   gap:30px;
+   align-items: center;
+   
+}
+
+.table-form__label{
+
+   flex: 1 1 auto;
+}
+
+.table-form__select{
+   
+   flex: 0 1 451px;
+   padding: 10px 15px;
+   font-family: inherit;
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: #fff;
+   border: 1px solid #bdbdbd;
+
+
+}
+
+
+
+/*=========================================*/
+
+
+.main-form__methods{
+
+   max-width: 606px;
+ 
+}
+
+
+.methods-form__radio{
+
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+
+.methods-form__title{
+
+font-family: "Oswald";
+color: rgba(0, 0, 0, 1);
+font-size: 24px;
+line-height: 283.333333%; /* 68/24 */
+margin-bottom: 20px;
+
+}
+
+
+.radio-form__item {
+	display: flex;
+   justify-content: space-between;
+   max-width: 380px;
+   padding: 15px 0px;
+   flex: 0 0 50px;
+   position: relative;
+}
+
+.radio-form__item:not(:last-child){
+
+   border-bottom: 1px solid #c4c4c4;
+}
+
+
+
+.radio-form__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+
+
+
+
+.radio-form__input:checked + .radio-form__label::before {
+
+   border: 5px solid black;
+   
+  
+   
+}
+.radio-form__label--check {
+	cursor: pointer;
+	display: inline-flex;
+	align-items:center;
+	gap: 10px;
+   
+}
+
+.radio-form__label--check::before {
+	content: "";
+   display: inline-block;
+	width: 15px;
+	height: 15px;
+   border: 1px solid black;
+   border-radius: 50%;
+  
+  
+}
+
+
+.button-sub{
+
+   width: 120px;
+   padding: 10px;
+   background-color: black;
+   color: rgba(255, 255, 255, 1);
+   font-family: "Oswald";
+   font-weight: 500;
+   font-size: 14px;
+   
+}
+
+.methods-form__link{
+
+   font-family: "Oswald";
+   font-size: 14px;
+   font-weight: 500;
+   color: #bdbdbd;
+}
+
+
+.methods-form__submit{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.methods-form__radio::before{
+
+   content:"";
+   display: inline-block;
+   width: 100%;
+   height: 1px;
+   background-color: rgba(196, 196, 196, 1);
+   margin-bottom: 5px;
+}
+
+
+
+
+@media (max-width: 632.98px){
+
+.billing-form__line{
+
+  flex: 0 1 100%;
+}
+
+
+.billing-form__information{
+   display: block;
+}
+
+
+.billing-form__area{
+
+   width: 100%;
+}
+
+
+.address-form__line{
+
+display: block;
+
+}
+
+.address-form__label{
+
+   display: block;
+   margin-bottom: 10px;
+}
+
+
+.table-form__line{
+
+
+   display: block
+  
+}
+
+.table-form__label{
+
+
+   display: block;
+   margin-bottom: 10px;
+}
+
+.address-form__input{
+
+   width: 100%;
+}
+
+
+.table-form__input{
+   width: 100%;
+}
+
+.table-form__select{
+
+   width: 100%;
+}
+
+}
+
+
+@media (max-width: 476.98px){
+
+.main{
+
+   padding: 0;
+}
+
+.billing-form__radio{
+
+
+   margin-bottom: 30px;
+}
+
+.text-field__group{
+
+   flex-wrap: wrap;
+}
+
+.text-field__btn{
+
+flex: 0 1 100%;
+}
+
+
+.text-field__input{
+
+   flex: 0 1 100%;
+
+}
+
+.button{
+
+   width: 140px;
+}
+
+
+
+
+
+
+
+
+}
+
